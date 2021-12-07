@@ -25,11 +25,11 @@ function App() {
   };
 
   const handleAddMemory = () => {
-    dispatch(addMemory(state.total));
+    dispatch(addMemory());
   };
 
   const handleMemoryTotal = () => {
-    dispatch(memoryTotal(state.memory));
+    dispatch(memoryTotal());
   };
 
   const handleMemoryClear = () => {
@@ -77,9 +77,9 @@ function App() {
             </div>
 
             <div className="row">
-              <CalcButton value={"+"} onClick={handleChangeOperation} />
-              <CalcButton value={"*"} onClick={handleChangeOperation} />
-              <CalcButton value={"-"} onClick={handleChangeOperation} />
+              <CalcButton value={"+"} onClick={() => handleChangeOperation("+")} />
+              <CalcButton value={"*"} onClick={() => handleChangeOperation("*")} />
+              <CalcButton value={"-"} onClick={() => handleChangeOperation("-")} />
             </div>
 
             <div className="row ce_button">

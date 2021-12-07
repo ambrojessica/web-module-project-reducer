@@ -23,12 +23,12 @@ export const clearTotal = () => {
     return ({ type: CLEAR_DISPLAY });
 };
 
-export const addMemory = (number) => {
-    return ({ type: ADD_TO_MEMORY, payload: number });
+export const addMemory = () => {
+    return ({ type: ADD_TO_MEMORY });
 };
 
-export const memoryTotal = (number) => {
-    return ({ type: ADD_MEMORY_TO_TOTAL, payload: number });
+export const memoryTotal = () => {
+    return ({ type: ADD_MEMORY_TO_TOTAL });
 };
 
 export const clearMemory = () => {
